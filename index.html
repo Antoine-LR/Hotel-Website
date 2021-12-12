@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr"
+  <head>
+    <meta charset="UTF-8">
+    <title>Pigeonnier du perron</title>
+    <link rel="stylesheet" type= "text/css" href="style.css"/>
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body> 
+  
+
+<!-- header --> 
+
+<header class = "header" id ="header">
+  <div class = "head-top">
+  <div class="logo">
+      <img src="logo.gif" alt="logo">
+  </div>  
+
+        <div class="site-name">
+              <span>Pigeonnier du Perron</span>
+        </div>
+        <div class="site-nav">
+              <span id="nav-btn"> Menu <i class="fas fa-bars"></i> </span>
+        </div>
+    </div>
+<div class="head-bottom flex">
+  <h2>Le Pigeonnier Du Perron Hôtel ★★★</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores praesentium blanditiis pariatur odit labore error esse suscipit quam accusamus? Distinctio suscipit ea hic fugiat aut laboriosam sequi voluptatum ab quaerat!</p>
+  <button type="button" class="head-btn"> Découvrir</button>
+</div>
+
+</header>
+<!---end of header-->
+
+<!--side navbar-->
+<div class="sidenav" id="sidenav" >
+    <span class="cancel-btn" id="cancel-btn">
+      <i class="fas fa-times"></i>
+    </span> 
+<ul class="navbar">
+  <li><a href="#header">Accueil</a>  </li>
+  <li><a href="#header">Services</a>  </li>
+  <li><a href="#header">Chambres</a>  </li>
+  <li><a href="#header">Restaurant</a> </li>
+</ul>
+
+<button class="btn sign-up">sign  up</button>
+<button class="btn log-in">log in</button>
+</div>
+<!--end of side navbar-->
+
+<!---fullscreen modal-->
+<div id="modal"></div>
+<!-- end of fullscreen modal-->
+
+<!--body content-->
+<section class="service sec-width" id="services">
+<div class="title">
+    <h2>Services</h2>
+</div>
+<div class="service-container">
+<!--single service-->
+<article class="service">
+  <div class="service-icon">
+    <span>
+    <i class="fas fa-utensils"></i>
+    </span>
+  </div>
+  <div class="service-content">
+    <h2>Petit Déjeuner</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum magnam modi natus ex ad sapiente, nostrum eveniet vel facere fugiat aperiam praesentium illum expedita cupiditate voluptatem accusantium debitis, ipsam ut esse cumque consequatur eius a pariatur. Facere corrupti fuga, tenetur incidunt voluptatem odit. Saepe cum libero nam unde laudantium ut.</p>
+    <button type="button" class="btn">Ici</button>
+  </div>
+</article>
+<!---end of single service-->
+<!--single service-->
+<article class="service">
+  <div class="service-icon">
+    <span>
+    <i class="fas fa-swimming-pool"></i>
+    </span>
+  </div>
+  <div class="service-content">
+    <h2>Piscine</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum magnam modi natus ex ad sapiente, nostrum eveniet vel facere fugiat aperiam praesentium illum expedita cupiditate voluptatem accusantium debitis, ipsam ut esse cumque consequatur eius a pariatur. Facere corrupti fuga, tenetur incidunt voluptatem odit. Saepe cum libero nam unde laudantium ut.</p>
+    <button type="button" class="btn">Ici</button>
+  </div>
+</article>
+<!---end of single service-->
+
+<!--single service-->
+<article class="service">
+  <div class="service-icon">
+    <span>
+    <i class="fas fa-door-closed"></i>
+    </span>
+  </div>
+  <div class="service-content">
+    <h2>Chambres</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum magnam modi natus ex ad sapiente, nostrum eveniet vel facere fugiat aperiam praesentium illum expedita cupiditate voluptatem accusantium debitis, ipsam ut esse cumque consequatur eius a pariatur. Facere corrupti fuga, tenetur incidunt voluptatem odit. Saepe cum libero nam unde laudantium ut.</p>
+    <button type="button" class="btn">Ici</button>
+  </div>
+</article>
+<!---end of single service-->
+
+</div>
+</section>
+
+<div class="Réservez">
+<form class="book-form">
+  <div class="form-item">
+    <label for="checkin-date">Date d'arrivée</label>
+    <input type="date" id="checkin-date" >
+  </div>
+  <div class="form-item">
+    <label for="checkout-date">Date de départ</label>
+    <input type="date" id="checkout-date" >
+  </div>
+  <div class="form-item"></div>
+      <label for="adult"> Adultes</label>
+      <input type="number" min="1" value="1" id="Adult">
+  </div>    
+  <div class="form-item"></div>
+      <label for="Children"> Enfants</label>
+      <input type="number" min="1" value="1" id="Children">
+  </div>    
+  <div class="form-item"></div>
+      <label for="rooms"> Chambres</label>
+      <input type="number" min="1" value="1" id="rooms">
+  </div>    
+  <div class="form-item"></div>
+  <input type="submit" class="btn" value="Réservez maintenant!">
+</div>    
+</form>
+</div>
+<!--endbody content-->
+<script src="Script.js"></script>
+  </body>
+</html>

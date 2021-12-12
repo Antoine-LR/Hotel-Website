@@ -1,0 +1,184 @@
+ .root{
+    --transition: all 0.7 ease;
+    --Color:BLACK;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    line-height: 1.6;
+}
+.btn{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px ;
+    padding: 10px;
+    width: 140px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: var(--transition);
+
+}
+.btn:hover{
+    opacity: 0.85;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,h2,h3,h4,h5, h6 {
+    padding: 8px 0;
+    color:black;
+    letter-spacing: 1px;
+}
+
+.header{
+    background: url(imageprincipale.jpeg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 800px;
+    padding: 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+
+}
+.head-top{ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgba(235, 233, 233,0.5);
+    color: black ;
+    font-size: 30px;
+    align-items: center;
+    line-height: 80px;
+}
+.site-name {
+    float: left;
+    margin-left: 60px;
+    margin-top: 20px;
+
+}
+
+.site-nav {
+    float: right;
+    margin-right: 25px;
+    margin-top: 20px;
+
+}
+.head-top span{
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: var(--transition);
+}
+
+.head-top span:hover{
+    color:#804040;
+}
+
+.head-bottom{
+    flex: 1;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.head-bottom h2 {
+    padding: 22px;
+    font-size: 45;
+    border-bottom: 2px solid black
+}
+
+.head-bottom p{
+    opacity: 0.9;
+    font-size: 20px;
+    margin: 45px auto;
+    width: 60vw;
+}
+
+.head-btn{
+    font-family: Georgia, serif;
+    margin:20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+    background: transparent;
+    padding:13px 20px;
+    background: rgba(0, 0, 0, 0.1) ;
+    color:#804040 ;
+    cursor: pointer;
+}
+
+.head-btn:hover{
+    background: transparent;
+}
+
+.logo {
+    float: left;
+    margin-left: 25px;
+    margin-top: 25PX;
+}
+/* navbar */
+
+.sidenav{
+    background: black;
+   color: blanchedalmond;
+   position: fixed;
+    top: 0;
+    bottom: 0;
+    right:0;
+    width: 300px;
+    padding: 20px;
+    z-index: 10;
+}
+
+/*.sidenav.show {
+    right: 0;
+}*/
+
+.cancel-btn {
+    position: absolute;
+    right: 25px;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+.cancel-btn:hover{
+    opacity:0.7;
+}
+.navbar{
+    margin-top: 50px;
+    list-style: none;
+    padding: 12px;
+
+}
+
+.navbar li a{
+    font-size: 16px;
+    color:white;
+    text-transform: capitalize;
+    text-decoration: none ;
+    padding:15px 0;
+    display: block;
+    border-bottom: 0.5px solid #804040;
+    opacity: 0.8;
+    letter-spacing: 1.5px;
+
+}
+
+.navbar li a:hover {
+    padding-left: 17px;
+}
